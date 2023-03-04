@@ -18,7 +18,6 @@
 		B5C99F4329B2BDD800E69C93 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C99F4229B2BDD800E69C93 /* PostViewController.swift */; };
 		B5C99F4529B2D7BC00E69C93 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C99F4429B2D7BB00E69C93 /* Post.swift */; };
 		B5C99F4729B2DEC800E69C93 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C99F4629B2DEC800E69C93 /* InfoViewController.swift */; };
-		B5C99F4929B2F8FA00E69C93 /* SomeAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C99F4829B2F8F900E69C93 /* SomeAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		B5C99F4229B2BDD800E69C93 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		B5C99F4429B2D7BB00E69C93 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B5C99F4629B2DEC800E69C93 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		B5C99F4829B2F8F900E69C93 /* SomeAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +75,6 @@
 				B5C99F3A29B28CBC00E69C93 /* SecondViewController.swift */,
 				B5C99F4429B2D7BB00E69C93 /* Post.swift */,
 				B5C99F4629B2DEC800E69C93 /* InfoViewController.swift */,
-				B5C99F4829B2F8F900E69C93 /* SomeAlertController.swift */,
 				B58769C129B2555200C382B5 /* Assets.xcassets */,
 				B58769C329B2555200C382B5 /* LaunchScreen.storyboard */,
 				B58769C629B2555200C382B5 /* Info.plist */,
@@ -155,7 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C99F4929B2F8FA00E69C93 /* SomeAlertController.swift in Sources */,
 				B5C99F4129B2A55600E69C93 /* ProfileViewController.swift in Sources */,
 				B5C99F3B29B28CBC00E69C93 /* SecondViewController.swift in Sources */,
 				B5C99F4329B2BDD800E69C93 /* PostViewController.swift in Sources */,
