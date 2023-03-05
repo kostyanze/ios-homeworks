@@ -35,7 +35,6 @@ class InfoViewController: UIViewController {
         }))
         alert.addAction(UIAlertAction(title: "Exit", style: UIAlertAction.Style.destructive, handler: {_ in
             print("Exit")
-            UIControl().sendAction(#selector(NSXPCConnection.suspend), to: UIApplication.shared, for: nil)
         }))
         self.present(alert, animated: true, completion: nil)
     }
