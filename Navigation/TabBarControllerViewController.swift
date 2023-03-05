@@ -16,7 +16,6 @@ final class TabBarControllerViewController: UITabBarController {
         setupControllers()
     }
     private func setupControllers() {
-        
         firstVC.tabBarItem.title = "Feed"
         firstVC.tabBarItem.image = UIImage(systemName: "list.dash")
         secondVC.tabBarItem.title = "Profile"

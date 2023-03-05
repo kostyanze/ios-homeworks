@@ -12,21 +12,24 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.4891369258, green: 0.6518346285, blue: 0.9515328161, alpha: 0.8470588235)
-        let buttonAlert = UIButton(type: .system)
-        buttonAlert.setTitle("EXIT", for: .normal)
-        buttonAlert.addTarget(self, action: #selector(alertButtonTapped), for: .touchUpInside)
-        buttonAlert.backgroundColor = #colorLiteral(red: 0.2097513893, green: 0.4205778408, blue: 0.605948458, alpha: 1)
-        buttonAlert.setTitleColor(#colorLiteral(red: 0.6036218391, green: 0.7135323608, blue: 0.8413763145, alpha: 1), for: .normal)
-        buttonAlert.layer.cornerRadius = 15
-        view.addSubview(buttonAlert)
-        buttonAlert.translatesAutoresizingMaskIntoConstraints = true
-        buttonAlert.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            buttonAlert.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            buttonAlert.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            buttonAlert.widthAnchor.constraint(equalToConstant: CGFloat(100)),
-            buttonAlert.heightAnchor.constraint(equalToConstant: 30)
-        ])
+        let someButtonAlertSet: UIButton = {
+            let buttonAlert = UIButton(type: .system)
+            buttonAlert.setTitle("EXIT", for: .normal)
+            buttonAlert.addTarget(self, action: #selector(alertButtonTapped), for: .touchUpInside)
+            buttonAlert.backgroundColor = #colorLiteral(red: 0.2097513893, green: 0.4205778408, blue: 0.605948458, alpha: 1)
+            buttonAlert.setTitleColor(#colorLiteral(red: 0.6036218391, green: 0.7135323608, blue: 0.8413763145, alpha: 1), for: .normal)
+            buttonAlert.layer.cornerRadius = 15
+            buttonAlert.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(buttonAlert)
+            NSLayoutConstraint.activate([
+                buttonAlert.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                buttonAlert.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+                buttonAlert.widthAnchor.constraint(equalToConstant: CGFloat(100)),
+                buttonAlert.heightAnchor.constraint(equalToConstant: 30)
+            ])
+            return buttonAlert
+        }()
+        view.addSubview(someButtonAlertSet)
     }
     @objc private func alertButtonTapped() {
         let alert = UIAlertController(title: "Are you really?", message: "Please, do not go 😓", preferredStyle: UIAlertController.Style.alert)
