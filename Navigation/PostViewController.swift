@@ -21,8 +21,11 @@ class PostViewController: UIViewController {
         view.backgroundColor = #colorLiteral(red: 0.02840791273, green: 0.7016910848, blue: 0.9924317979, alpha: 1)
         title = post.title
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.1997225817, green: 0.41647166, blue: 0.5943888241, alpha: 1)]
-        let infoButton = UIBarButtonItem(image: UIImage(systemName: "questionmark.folder"), style: .done, target: self, action: #selector(infoButtonTapped))
-        navigationItem.rightBarButtonItem = infoButton
+        makeUIBarButtonItem()
+    }
+    private func makeUIBarButtonItem() {
+    let infoButton = UIBarButtonItem(image: UIImage(systemName: "questionmark.folder"), style: .done, target: self, action: #selector(infoButtonTapped))
+    navigationItem.rightBarButtonItem = infoButton
     }
     @objc private func infoButtonTapped() {
         InfoViewController().modalPresentationStyle = .fullScreen
